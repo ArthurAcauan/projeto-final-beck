@@ -34,3 +34,5 @@ Passo 4 = Codar o arquivo main.html.
 Passo 5 = Verificar o banco de dados, e ver se a tabela esta com as frases corretas.
 
 Passo 6 = abrir o html e testar o projeto.
+
+<button onclick="window.location.href='http://localhost:3030/frases';">Me mostre uma frase!</button>
