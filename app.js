@@ -28,7 +28,7 @@ app.get('/frases', (req, res)=> {
 })
 
 app.get('/frases/n/:numero', (req, res)=> {
-    const db = new sqlite3.Database('frases.db');
+    const db = new sqlite3.Database('frasesMotivacionais.db');
     const sql = `SELECT descrição, autor FROM frases LIMIT ?`;
     
     db.all(sql, [req.params.numero], (erro, linhas) => {
@@ -38,7 +38,7 @@ app.get('/frases/n/:numero', (req, res)=> {
 });
 
 app.get('/frases/autoria/:nome', (req, res)=> {
-    const db = new sqlite3.Database('frases.db');
+    const db = new sqlite3.Database('frasesMotivacionais.db');
     const sql = `SELECT descrição, autor FROM frases WHERE autor=?`;
     
     db.all(sql, [req.params.nome], (erro, linhas) => {
@@ -48,7 +48,7 @@ app.get('/frases/autoria/:nome', (req, res)=> {
 });
 
 app.get('/frases/aleatorio', (req, res)=> {
-    const db = new sqlite3.Database('frases.db');
+    const db = new sqlite3.Database('frasesMotivacionais.db');
     const sql = `SELECT descrição, autor FROM frases`;
     
     db.all(sql, [], (erro, linhas) => {
