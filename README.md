@@ -37,4 +37,4 @@ Passo 6 = abrir o html e testar o projeto.
 
 <button onclick="window.location.href='http://localhost:3030/frases';">Me mostre uma frase!</button>
 
-!{Prévia do html gerado pelo projeto}(projeto_back.PNG) 
+<img src="projeto_back.PNG">
